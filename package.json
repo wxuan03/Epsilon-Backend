@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/wxuan03/Epsilon-Backend/issues"
   },
-  "homepage": "https://github.com/wxuan03/Epsilon-Backend#readme"
+  "homepage": "https://github.com/wxuan03/Epsilon-Backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
