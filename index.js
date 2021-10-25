@@ -25,3 +25,13 @@ app.listen(PORT, () => { //tells your application to listen for any requests tha
  console.log(`Server is listening on port: ${PORT}`);// port is a specific address 
 });
 
+router.get('/',function(req,res){ //uses express server to handle routes of the app
+  res.sendfile("index.html");     //when users request the app from a web browser, we will serve the HTML file
+});
+
+router.post('/login', function(req,res){ //simple login function
+var user_name = req.body.user;
+var password = req.body.password;
+console.log("User name = " +user_name+", pasword is "+password );
+res.end("yes");
+});
